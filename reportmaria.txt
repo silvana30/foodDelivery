@@ -1,0 +1,8 @@
+OrderP{idOrder=32, idClient=6, date=2018-04-01T16:39:14.511, address='Cluj', totalPrice=1239.8999999999999, paymentType='cart'}
+OrderP{idOrder=43, idClient=6, date=2018-04-01T18:36:15.207, address='Cluj', totalPrice=380.0, paymentType=''}
+OrderP{idOrder=46, idClient=6, date=2018-04-01T19:32:58.123, address='Cluj', totalPrice=15400.0, paymentType=''}
+OrderP{idOrder=49, idClient=6, date=2018-04-01T19:38:28.045, address='Cluj', totalPrice=42.3, paymentType=''}
+OrderP{idOrder=50, idClient=6, date=2018-04-01T19:43:48.170, address='Cluj', totalPrice=340.0, paymentType=''}
+OrderP{idOrder=51, idClient=6, date=2018-04-01T19:53:55.341, address='Cluj', totalPrice=320.0, paymentType=''}
+OrderP{idOrder=52, idClient=6, date=2018-04-01T19:54:34.031, address='Cluj', totalPrice=300.0, paymentType=''}
+OrderP{idOrder=56, idClient=6, date=2018-04-01T20:04:39.483, address='Cluj', totalPrice=285.0, paymentType=''}

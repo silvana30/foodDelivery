@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="foodDelivery@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="fooddelivery">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sakila"/>
+    <schema id="7" parent="1" name="sys"/>
+    <schema id="8" parent="1" name="world"/>
+    <table id="9" parent="2" name="cart"/>
+    <table id="10" parent="2" name="orderp"/>
+    <table id="11" parent="2" name="product"/>
+    <table id="12" parent="2" name="user"/>
+    <routine id="13" parent="2" name="orderPROC">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="14" parent="2" name="orderP2">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="15" parent="2" name="orderP3">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="16" parent="9" name="idCart">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="17" parent="9" name="idOrder">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="18" parent="9" name="idProduct">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="19" parent="9" name="cantity">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <index id="20" parent="9" name="idOrder_idx">
+      <ColNames>idOrder</ColNames>
+    </index>
+    <index id="21" parent="9" name="idProduct_idx">
+      <ColNames>idProduct</ColNames>
+    </index>
+    <key id="22" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idCart</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="23" parent="9" name="idOrder">
+      <ColNames>idOrder</ColNames>
+      <RefSchemaName>fooddelivery</RefSchemaName>
+      <RefTableName>orderp</RefTableName>
+      <RefColNames>idOrder</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="24" parent="9" name="idProduct">
+      <ColNames>idProduct</ColNames>
+      <RefSchemaName>fooddelivery</RefSchemaName>
+      <RefTableName>product</RefTableName>
+      <RefColNames>idProduct</RefColNames>
+    </foreign-key>
+    <column id="25" parent="10" name="idOrder">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="10" name="idClient">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="27" parent="10" name="date">
+      <Position>3</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="28" parent="10" name="address">
+      <Position>4</Position>
+      <DataType>varchar(80)|0</DataType>
+    </column>
+    <column id="29" parent="10" name="totalPrice">
+      <Position>5</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="30" parent="10" name="paymentType">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="31" parent="10" name="idUser_idx">
+      <ColNames>idClient</ColNames>
+    </index>
+    <key id="32" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idOrder</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="33" parent="10" name="idUser">
+      <ColNames>idClient</ColNames>
+      <RefSchemaName>fooddelivery</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>idUser</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="34" parent="11" name="idProduct">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="35" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="11" name="price">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="11" name="ingredients">
+      <Position>4</Position>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="38" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idProduct</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="12" name="idUser">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="40" parent="12" name="username">
+      <Position>2</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="12" name="password">
+      <Position>3</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="12" name="phone">
+      <Position>4</Position>
+      <DataType>varchar(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="12" name="address">
+      <Position>5</Position>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="12" name="card_nr">
+      <Position>6</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="12" name="loyal">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="46" parent="12" name="admin">
+      <Position>8</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="47" parent="12" name="logged">
+      <Position>9</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <index id="48" parent="12" name="password_UNIQUE">
+      <ColNames>password</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="49" parent="12" name="phone_UNIQUE">
+      <ColNames>phone</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="50" parent="12" name="username_UNIQUE">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="51" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idUser</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="52" parent="12" name="username_UNIQUE">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>username_UNIQUE</UnderlyingIndexName>
+    </key>
+    <key id="53" parent="12" name="password_UNIQUE">
+      <ColNames>password</ColNames>
+      <UnderlyingIndexName>password_UNIQUE</UnderlyingIndexName>
+    </key>
+    <key id="54" parent="12" name="phone_UNIQUE">
+      <ColNames>phone</ColNames>
+      <UnderlyingIndexName>phone_UNIQUE</UnderlyingIndexName>
+    </key>
+    <argument id="55" parent="13" name="username">
+      <DataType>varchar(25)|0</DataType>
+    </argument>
+    <argument id="56" parent="13" name="date">
+      <DataType>datetime|0</DataType>
+    </argument>
+    <argument id="57" parent="13" name="address">
+      <DataType>varchar(80)|0</DataType>
+    </argument>
+    <argument id="58" parent="13" name="totalPrice">
+      <DataType>varchar(45)|0</DataType>
+    </argument>
+    <argument id="59" parent="13" name="paymentType">
+      <DataType>varchar(45)|0</DataType>
+    </argument>
+    <argument id="60" parent="14" name="username">
+      <DataType>varchar(25)|0</DataType>
+    </argument>
+    <argument id="61" parent="14" name="date">
+      <DataType>varchar(25)|0</DataType>
+    </argument>
+    <argument id="62" parent="14" name="totalPrice">
+      <DataType>double|0</DataType>
+    </argument>
+    <argument id="63" parent="14" name="paymentType">
+      <DataType>varchar(45)|0</DataType>
+    </argument>
+    <argument id="64" parent="15" name="username">
+      <DataType>varchar(25)|0</DataType>
+    </argument>
+    <argument id="65" parent="15" name="totalPrice">
+      <DataType>double|0</DataType>
+    </argument>
+    <argument id="66" parent="15" name="paymentType">
+      <DataType>varchar(45)|0</DataType>
+    </argument>
+  </database-model>
+</dataSource>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.company.Main</OriginalElement>
+  <nodes>
+    <node x="803.0210916442046" y="0.0">service.validators.Validator</node>
+    <node x="64.69371069182353" y="146.0">service.validators.ProductValidator</node>
+    <node x="1215.0068181818183" y="0.0">model.User</node>
+    <node x="108.0795454545455" y="312.0">service.ProductBLL</node>
+    <node x="656.8713887527567" y="610.0">com.company.Main</node>
+    <node x="484.23047659887243" y="146.0">model.Cart</node>
+    <node x="669.8971432655392" y="312.0">service.validators.CartValidator</node>
+    <node x="257.6937106918235" y="146.0">dao.ProductDAO</node>
+    <node x="1189.7304765988724" y="146.0">service.validators.UserValidator</node>
+    <node x="389.0304765988725" y="0.0">connection.ConnectionFactory</node>
+    <node x="51.943710691823526" y="0.0">model.Product</node>
+    <node x="875.3138099322058" y="398.0">service.OrderBLL</node>
+    <node x="657.3713887527567" y="524.0">view.View</node>
+    <node x="608.4402597402598" y="398.0">service.CartBLL</node>
+    <node x="1047.7304765988724" y="146.0">dao.UserDAO</node>
+    <node x="1184.8152597402598" y="312.0">service.UserBLL</node>
+    <node x="866.7304765988724" y="146.0">service.validators.OrderValidator</node>
+    <node x="670.1877583108712" y="0.0">model.OrderP</node>
+    <node x="432.3652597402598" y="312.0">dao.CartDAO</node>
+    <node x="592.2304765988724" y="146.0">dao.OrderDAO</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="service.OrderBLL" target="dao.OrderDAO">
+      <point x="-50.83333333333334" y="-18.0" />
+      <point x="885.4804765988724" y="378.0" />
+      <point x="845.2304765988724" y="378.0" />
+      <point x="845.2304765988724" y="202.0" />
+      <point x="690.4804765988724" y="202.0" />
+      <point x="32.75" y="18.0" />
+    </edge>
+    <edge source="service.CartBLL" target="model.Cart">
+      <point x="-13.875" y="-18.0" />
+      <point x="650.0652597402598" y="368.0" />
+      <point x="578.1669249775379" y="368.0" />
+      <point x="578.1669249775379" y="222.0" />
+      <point x="545.8304765988725" y="222.0" />
+      <point x="17.599999999999994" y="18.0" />
+    </edge>
+    <edge source="com.company.Main" target="view.View">
+      <point x="23.5" y="-18.0" />
+      <point x="23.25" y="18.0" />
+    </edge>
+    <edge source="dao.UserDAO" target="connection.ConnectionFactory">
+      <point x="-40.66666666666666" y="-18.0" />
+      <point x="1068.063809932206" y="66.0" />
+      <point x="550.0304765988725" y="66.0" />
+      <point x="69.0" y="18.0" />
+    </edge>
+    <edge source="view.View" target="service.ProductBLL">
+      <point x="-25.363636363636374" y="-18.0" />
+      <point x="678.5077523891204" y="484.0" />
+      <point x="175.5795454545455" y="484.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="service.CartBLL" target="service.validators.CartValidator">
+      <point x="13.875" y="-18.0" />
+      <point x="677.8152597402598" y="368.0" />
+      <point x="707.1471432655392" y="368.0" />
+      <point x="-37.25" y="18.0" />
+    </edge>
+    <edge source="dao.CartDAO" target="dao.OrderDAO">
+      <point x="51.428571428571445" y="-18.0" />
+      <point x="543.7938311688313" y="292.0" />
+      <point x="624.9804765988724" y="292.0" />
+      <point x="-32.75" y="18.0" />
+    </edge>
+    <edge source="service.validators.CartValidator" target="model.Cart">
+      <point x="-37.25" y="-18.0" />
+      <point x="707.1471432655392" y="212.0" />
+      <point x="563.4304765988725" y="212.0" />
+      <point x="35.19999999999999" y="18.0" />
+    </edge>
+    <edge source="view.View" target="model.OrderP">
+      <point x="8.454545454545439" y="-18.0" />
+      <point x="712.3259342073022" y="464.0" />
+      <point x="829.3971432655392" y="464.0" />
+      <point x="829.3971432655392" y="106.0" />
+      <point x="732.604424977538" y="106.0" />
+      <point x="8.916666666666671" y="18.0" />
+    </edge>
+    <edge source="service.validators.ProductValidator" target="model.Product">
+      <point x="-43.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="service.validators.UserValidator" target="model.User">
+      <point x="37.75" y="-18.0" />
+      <point x="1302.9804765988724" y="126.0" />
+      <point x="1260.0068181818183" y="126.0" />
+      <point x="-7.105427357601002E-15" y="18.0" />
+    </edge>
+    <edge source="view.View" target="service.OrderBLL">
+      <point x="16.909090909090878" y="-18.0" />
+      <point x="720.7804796618476" y="474.0" />
+      <point x="936.3138099322058" y="474.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="view.View" target="service.UserBLL">
+      <point x="25.363636363636374" y="-18.0" />
+      <point x="729.2350251163931" y="484.0" />
+      <point x="1269.5652597402598" y="484.0" />
+      <point x="28.25" y="18.0" />
+    </edge>
+    <edge source="view.View" target="model.User">
+      <point x="33.81818181818181" y="-18.0" />
+      <point x="737.6895705709385" y="494.0" />
+      <point x="1362.2304765988724" y="494.0" />
+      <point x="1362.2304765988724" y="106.0" />
+      <point x="1285.721103896104" y="106.0" />
+      <point x="25.714285714285666" y="18.0" />
+    </edge>
+    <edge source="service.UserBLL" target="dao.UserDAO">
+      <point x="-42.375" y="-18.0" />
+      <point x="1198.9402597402598" y="292.0" />
+      <point x="1108.7304765988724" y="292.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="dao.CartDAO" target="dao.ProductDAO">
+      <point x="-51.428571428571445" y="-18.0" />
+      <point x="440.93668831168833" y="292.0" />
+      <point x="365.6937106918235" y="292.0" />
+      <point x="36.0" y="18.0" />
+    </edge>
+    <edge source="service.ProductBLL" target="model.Product">
+      <point x="-50.625" y="-18.0" />
+      <point x="124.9545454545455" y="292.0" />
+      <point x="19.454545454545496" y="292.0" />
+      <point x="19.454545454545496" y="126.0" />
+      <point x="91.94371069182353" y="126.0" />
+      <point x="-16.0" y="18.0" />
+    </edge>
+    <edge source="view.View" target="model.Cart">
+      <point x="-16.909090909090935" y="-18.0" />
+      <point x="686.9622978436657" y="474.0" />
+      <point x="562.8652597402597" y="474.0" />
+      <point x="562.8652597402597" y="232.0" />
+      <point x="528.2304765988724" y="232.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="service.OrderBLL" target="service.UserBLL">
+      <point x="50.83333333333333" y="-18.0" />
+      <point x="987.1471432655392" y="378.0" />
+      <point x="1213.0652597402598" y="378.0" />
+      <point x="-28.25" y="18.0" />
+    </edge>
+    <edge source="dao.CartDAO" target="model.Product">
+      <point x="-34.28571428571428" y="-18.0" />
+      <point x="458.0795454545455" y="282.0" />
+      <point x="412.19371069182364" y="282.0" />
+      <point x="412.19371069182364" y="86.0" />
+      <point x="155.94371069182353" y="86.0" />
+      <point x="48.0" y="18.0" />
+    </edge>
+    <edge source="service.OrderBLL" target="service.validators.OrderValidator">
+      <point x="10.166666666666657" y="-18.0" />
+      <point x="946.4804765988724" y="378.0" />
+      <point x="952.2304765988724" y="378.0" />
+      <point x="952.2304765988724" y="292.0" />
+      <point x="986.7304765988724" y="292.0" />
+      <point x="39.99999999999997" y="18.0" />
+    </edge>
+    <edge source="dao.ProductDAO" target="connection.ConnectionFactory">
+      <point x="48.0" y="-18.0" />
+      <point x="377.6937106918235" y="106.0" />
+      <point x="412.0304765988725" y="106.0" />
+      <point x="-69.0" y="18.0" />
+    </edge>
+    <edge source="dao.CartDAO" target="model.Cart">
+      <point x="17.142857142857167" y="-18.0" />
+      <point x="509.50811688311694" y="252.0" />
+      <point x="493.0304765988725" y="252.0" />
+      <point x="-35.19999999999999" y="18.0" />
+    </edge>
+    <edge source="service.validators.CartValidator" target="service.validators.Validator">
+      <point x="37.25" y="-18.0" />
+      <point x="781.6471432655392" y="126.0" />
+      <point x="848.7710916442046" y="126.0" />
+      <point x="-15.25" y="18.0" />
+    </edge>
+    <edge source="service.OrderBLL" target="model.OrderP">
+      <point x="-30.5" y="-18.0" />
+      <point x="905.8138099322058" y="368.0" />
+      <point x="856.2304765988724" y="368.0" />
+      <point x="856.2304765988724" y="96.0" />
+      <point x="750.4377583108712" y="96.0" />
+      <point x="26.75" y="18.0" />
+    </edge>
+    <edge source="dao.ProductDAO" target="model.Product">
+      <point x="-48.0" y="-18.0" />
+      <point x="281.6937106918235" y="106.0" />
+      <point x="123.94371069182353" y="106.0" />
+      <point x="16.0" y="18.0" />
+    </edge>
+    <edge source="service.UserBLL" target="service.validators.UserValidator">
+      <point x="-14.125" y="-18.0" />
+      <point x="-37.75" y="18.0" />
+    </edge>
+    <edge source="service.UserBLL" target="model.User">
+      <point x="42.375" y="-18.0" />
+      <point x="1283.6902597402598" y="292.0" />
+      <point x="1351.2304765988724" y="292.0" />
+      <point x="1351.2304765988724" y="116.0" />
+      <point x="1272.8639610389612" y="116.0" />
+      <point x="12.85714285714289" y="18.0" />
+    </edge>
+    <edge source="dao.OrderDAO" target="model.OrderP">
+      <point x="0.0" y="-18.0" />
+      <point x="657.7304765988724" y="96.0" />
+      <point x="696.9377583108713" y="96.0" />
+      <point x="-26.749999999999996" y="18.0" />
+    </edge>
+    <edge source="service.ProductBLL" target="service.validators.ProductValidator">
+      <point x="-16.875" y="-18.0" />
+      <point x="158.7045454545455" y="282.0" />
+      <point x="107.94371069182353" y="282.0" />
+      <point x="-43.25" y="18.0" />
+    </edge>
+    <edge source="service.OrderBLL" target="model.User">
+      <point x="30.49999999999997" y="-18.0" />
+      <point x="966.8138099322058" y="368.0" />
+      <point x="1037.2304765988724" y="368.0" />
+      <point x="1037.2304765988724" y="106.0" />
+      <point x="1221.4353896103898" y="106.0" />
+      <point x="-38.571428571428555" y="18.0" />
+    </edge>
+    <edge source="service.validators.OrderValidator" target="service.validators.Validator">
+      <point x="40.0" y="-18.0" />
+      <point x="986.7304765988724" y="76.0" />
+      <point x="879.2710916442046" y="76.0" />
+      <point x="15.25" y="18.0" />
+    </edge>
+    <edge source="view.View" target="model.Product">
+      <point x="-33.81818181818181" y="-18.0" />
+      <point x="670.053206934575" y="494.0" />
+      <point x="8.454545454545496" y="494.0" />
+      <point x="8.454545454545496" y="116.0" />
+      <point x="75.94371069182353" y="116.0" />
+      <point x="-32.0" y="18.0" />
+    </edge>
+    <edge source="service.CartBLL" target="dao.CartDAO">
+      <point x="-41.625" y="-18.0" />
+      <point x="622.3152597402598" y="378.0" />
+      <point x="492.3652597402598" y="378.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="service.ProductBLL" target="dao.ProductDAO">
+      <point x="50.625" y="-18.0" />
+      <point x="226.2045454545455" y="292.0" />
+      <point x="293.6937106918235" y="292.0" />
+      <point x="-36.0" y="18.0" />
+    </edge>
+    <edge source="dao.CartDAO" target="model.OrderP">
+      <point x="0.0" y="-18.0" />
+      <point x="492.3652597402598" y="262.0" />
+      <point x="469.0304765988725" y="262.0" />
+      <point x="469.0304765988725" y="86.0" />
+      <point x="679.104424977538" y="86.0" />
+      <point x="-44.58333333333333" y="18.0" />
+    </edge>
+    <edge source="view.View" target="service.CartBLL">
+      <point x="-8.454545454545496" y="-18.0" />
+      <point x="695.4168432982112" y="464.0" />
+      <point x="636.1902597402598" y="464.0" />
+      <point x="-27.75" y="18.0" />
+    </edge>
+    <edge source="service.validators.UserValidator" target="service.validators.Validator">
+      <point x="-37.75" y="-18.0" />
+      <point x="1227.4804765988724" y="56.0" />
+      <point x="909.7710916442046" y="56.0" />
+      <point x="45.75" y="18.0" />
+    </edge>
+    <edge source="dao.OrderDAO" target="connection.ConnectionFactory">
+      <point x="-43.66666666666666" y="-18.0" />
+      <point x="614.0638099322058" y="76.0" />
+      <point x="504.0304765988725" y="76.0" />
+      <point x="23.0" y="18.0" />
+    </edge>
+    <edge source="service.validators.OrderValidator" target="model.OrderP">
+      <point x="-40.0" y="-18.0" />
+      <point x="906.7304765988724" y="86.0" />
+      <point x="768.2710916442046" y="86.0" />
+      <point x="44.58333333333333" y="18.0" />
+    </edge>
+    <edge source="dao.CartDAO" target="connection.ConnectionFactory">
+      <point x="-17.14285714285711" y="-18.0" />
+      <point x="475.22240259740266" y="272.0" />
+      <point x="458.0304765988725" y="272.0" />
+      <point x="-23.0" y="18.0" />
+    </edge>
+    <edge source="service.validators.ProductValidator" target="service.validators.Validator">
+      <point x="43.25" y="-18.0" />
+      <point x="194.44371069182353" y="116.0" />
+      <point x="818.2710916442046" y="116.0" />
+      <point x="-45.75" y="18.0" />
+    </edge>
+    <edge source="dao.UserDAO" target="model.User">
+      <point x="0.0" y="-18.0" />
+      <point x="1108.7304765988724" y="116.0" />
+      <point x="1234.2925324675325" y="116.0" />
+      <point x="-25.714285714285715" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8063063063063063" x="939.9944134078212" y="435.39106145251395" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
